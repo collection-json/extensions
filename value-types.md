@@ -22,24 +22,21 @@ An object is a JSON object containing key value pairs where the values are restr
 Example:
 
 ```json
-{ "collection" :
+{ "collection":
   {
-    "version" : "1.0",
-    "href" : "http://example.org/sessions/",
-
-    "items" : [
-      {
-        "href" : "http://example.org/session/1",
-        "data" : [
-          {"name" : "title", "value" : "J. Doe does something strange", "prompt" : "Title"},
-          {"name" : "tags", "array" : ["article", "json"], "prompt" : "Tags"},
-          {"name" : "contacts", "object" : 
-		{ "name", "foo"}
-	    ], 
-          "prompt" : "Contacts"}
-        ],
-      }
-    ],
+    "version":"1.0",
+    "href":"http://example.org/sessions/",  
+    "items":[
+       {
+          "href":"http://example.org/session/1",
+          "data":[
+             { "name":"title", "value":"J. Doe does something strange", "prompt":"Title"},
+             { "name":"tags", "array":["article","json"], "prompt":"Tags"},
+             { "name":"contacts", "object":{ "name":"foo" } }
+          ],
+          "prompt":"Contacts"
+       }
+    ]
   }
 }
 ```
