@@ -1,7 +1,8 @@
 # Read only items
 
 Inform the client that some collection items are read-only, while still allowing others to be updated and also new items to be created.
-Rationale:
+
+## Rationale:
 The core specification doesn't provide a way to include in the representation what collection items are read-only. This proposal extends the collection representation with this information.
 Namely:
  * There are scenarios where new items can be created, some items can be updated while other are read-only. Consider for instance a issue tracking system where any authenticated user can create new issues however is only allowed to edit the issues created or owned but her.
@@ -15,7 +16,7 @@ Clients that are unaware of this extension still operate correctly when processi
 
 The non-updatability of an item can be relative to the authentication context of a client. For instance, two clients with different authenticated identities can observe the representations of the _same_ item with _different_ `read-only` properties.
 
-Example:
+## Example:
 
 ```json
 { "collection":
