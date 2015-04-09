@@ -6,10 +6,10 @@ The validations array is an OPTIONAL property of an individual data element with
 
 The validations array SHOULD contain one or more anonymous objects. Each object composed of four possible properties: 
 
-* `name` (REQUIRED) - the name of the validator.
-* `prompt` (OPTIONAL) - the description of the validator as documentation for the developer.
-* `arguments` (OPTIONAL) - an array of anonymous objects consisting of a `name` and `value` that will act as arguments for the validator.
-* `message` (OPTIONAL) - a message to pass to the user in the event that the validation failed.
+* `name` (REQUIRED) - The name of the validator. If the `name` is missing, clients MUST ignore that validation rule.
+* `prompt` (OPTIONAL) - The description of the validator as documentation for the developer.
+* `arguments` (VALIDATOR-SPECIFIC) - An array of anonymous objects consisting of a `name` and `value` that will act as arguments for the validator. If the array is missing a `name` or `value` argument, clients should ignore that item. If a validator has required arguments and the array is missing or incomplete, clients MUST ignore that validation rule.
+* `message` (OPTIONAL) - A message to pass to the user in the event that the validation failed. If this item is missing, clients SHOULD assume a `message` of "Validation failed".
 
 Clients that support the validations array SHOULD accept, parse and process all common validators defined below.
 
@@ -21,7 +21,7 @@ Inclusion validates a value to ensure it is within a list of allowed values.
 
 * Name: `inclusion`
 * Arguments
-  * one or more `option` elements
+  * (REQUIRED) one or more `option` elements.
 
 ```json
 "validations": [{
@@ -47,7 +47,7 @@ Exclusion validates value to ensure it is not within a list of values.
 
 * Name: `exclusion`
 * Arguments:
-  * one or more `option` elements
+  * (REQUIRED) one or more `option` elements.
 
 ```json
 "validations": [{
@@ -118,7 +118,7 @@ File Type validates a File against a list of allowed file types
 
 * Name: `file_type`
 * Arguments
-  * one or more `option` elements
+  * (REQUIRED) one or more `option` elements
 
 ```json
 "validations": [{
