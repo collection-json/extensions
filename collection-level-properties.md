@@ -18,21 +18,21 @@ The value of the `properties` element MUST be an ARRAY of zero or more anonymous
 This mirrors the approach of the existing [data]( https://github.com/collection-json/spec/blob/master/README.md#32-data)  property of [items](https://github.com/collection-json/spec/blob/master/README.md#31-items).
 
 ```json
-// Example using properties to return number of hits from a search for "Hstory" (sic)
+// Example using properties to return number of hits from a search for "Hstory" (sic - demonstrating fuzzy search approach)
 { "collection":
   {
     "version":"1.0",
     "href":"http://example.org/issues/?q=Hstory",  
-    “properties”: [
+    "properties": [
        {
-       “name” : “size”,
-       “value” : 267,
-       “prompt” : “Total number of results”
+       "name" : "size",
+       "value" : 267,
+       "prompt" : "Total number of results"
        },
        {
-       “name” : “pages”,
-       “value” : 27
-       “prompt” : “Number of result pages”
+       "name" : "pages",
+       "value" : 27
+       "prompt" : "Number of result pages"
        },
        {
        "name" : "subtitle",
