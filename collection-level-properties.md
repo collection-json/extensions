@@ -37,6 +37,7 @@ This mirrors the approach of the existing [data]( https://github.com/collection-
        {
        "name" : "subtitle",
        "value" : "Page 1 of 27"
+       },
        {
        "name" : "title",
        "value" : "No Items matched Hstory. Returning items matching History"
