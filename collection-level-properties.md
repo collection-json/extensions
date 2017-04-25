@@ -31,7 +31,7 @@ This mirrors the approach of the existing [data]( https://github.com/collection-
        },
        {
        "name" : "pages",
-       "value" : 27
+       "value" : 27,
        "prompt" : "Number of result pages"
        },
        {
@@ -41,8 +41,8 @@ This mirrors the approach of the existing [data]( https://github.com/collection-
        "name" : "title",
        "value" : "No Items matched Hstory. Returning items matching History"
        }
-    ]
-    "items": [...]
+    ],
+    "items": [...],
     "template": {(...)}
   }
 }
