@@ -2,7 +2,7 @@
 
 ## 1.0 Command Templates
 
-Clients that support the [Collection+JSON](http://amundsen.com/media-types/collection/) media type MAY be able to recognize and parse command templates found within responses. Command templates MAY consist of a `data` array associated with an `href` property. The `commands` arrary supports command templates.
+Clients that support the [Collection+JSON](http://amundsen.com/media-types/collection/) media type MAY be able to recognize and parse command templates found within responses. Command templates MAY consist of a `data` array associated with an `href` property. The `commands` array supports command templates.
 
 For command templates, the name/value pairs of the `data` array set are sent as JSON in the body (`{"id": 1, "members_to_notify": "all"}`) or multipart/form-data, both via an HTTP POST.
 
