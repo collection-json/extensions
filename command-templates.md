@@ -22,7 +22,7 @@ If present, the `data` array represents command parameters for the associated `h
     {
       "href": "/users/disable",
       "rel": "disable",
-      "name" "Disable",
+      "name": "Disable",
       "prompt": "Disable user",
       "data": [
         {"name": "id", "value": "", "prompt": "User id to disable"}
