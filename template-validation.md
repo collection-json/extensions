@@ -1,6 +1,6 @@
 # Template Data Validation
 
-Support template data validation by adding required fields (minimal dataset) and regular expression validation. A non-required field can still be validated by a regular expression, iff a value has been provided.
+Support template data validation by adding required fields (minimal dataset) and regular expression validation. A non-required field can still be validated by a regular expression, if a value has been provided.
 
 1. Add an optional property to the <code>data</code> object: required (boolean)
 2. Add an optional property to the <code>data</code> object: regexp (string pattern)
