@@ -9,7 +9,7 @@ data: [
   {
     "name": "old_name",
     "value": "Robert Tables",
-    "prompt": "'old_name' is deprecated and will be removed in a future version, use 'new_name' instead."
+    "prompt": "'old_name' is deprecated and will be removed in a future version, use 'new_name' instead.",
     "deprecated": true
   },{
     "name": "new_name",
