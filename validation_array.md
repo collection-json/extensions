@@ -79,7 +79,7 @@ Format validates a string String to ensure it matches a specified regex pattern.
 "validations": [{
   "name": "format",
   "prompt": "regex pattern for an email address",
-  "message": "The background color must be red, green or blue.",
+  "message": "The value must be a valid email address.",
   "arguments": [{
     "name": "regex",
     "value": "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b"
@@ -257,7 +257,7 @@ Presence validates a value to ensure that it present (not null and not empty).
         "value": null,
         "validations": [{
           "name": "format",
-          "message": "The background color must be red, green or blue.",
+          "message": "The value must be a valid email address.",
           "prompt": "regex pattern for an email address",
           "arguments": [{
             "name": "regex",
