@@ -122,7 +122,7 @@ File Type validates a File against a list of allowed file types
 
 ```json
 "validations": [{
-  "name": "inclusion",
+  "name": "file_type",
   "prompt": "allowed file types",
   "message": "Only types of an image type are allowed",
   "arguments": [{
